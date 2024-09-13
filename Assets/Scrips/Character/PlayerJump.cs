@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        if (isGrounded && _playerInput.jumpInput)
+        if (isGrounded && _playerInput.jumpInput > 0)
         {
             Jump();
         }
