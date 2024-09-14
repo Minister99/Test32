@@ -2,25 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRotation : MonoBehaviour
+public class PlayerRotator : MonoBehaviour
 {
-    public Transform cameraTransform;
-    public float rotationSpeed = 5f;
+    private Transform _player;
 
-    private void Update()
+    private void Start()
     {
-        RotatePlayer();
+        _player = GetComponent<Transform>();
     }
 
-    private void RotatePlayer()
+    public void RotatePlayer(float rotationX)
     {
-        Vector3 cameraForward = cameraTransform.forward;
-        cameraForward.y = 0;  // Убираем влияние вертикали
-
-        if (cameraForward.magnitude > 0.1f)
+        if (_player != null)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(cameraForward);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            _player.rotation = Quaternion.Euler(0, rotationX, 0);
         }
     }
 }

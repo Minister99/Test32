@@ -6,7 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
-    public float jumpInput;
+    public bool jumpInput;
     public float mouseXInput;
     public float mouseYInput;
    
@@ -20,7 +20,7 @@ public class PlayerInput : MonoBehaviour
     {
         horizontalInput = Input.GetAxis(GlobalStringWar.horizontal);
         verticalInput = Input.GetAxis(GlobalStringWar.vertical);
-        jumpInput = Input.GetAxis(GlobalStringWar.jump);
+        jumpInput = Input.GetButton(GlobalStringWar.jump);
 
     }
 
