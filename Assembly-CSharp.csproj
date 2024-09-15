@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scrips\Character\PlayerMovement.cs" />
+    <Compile Include="Assets\Scrips\Character\ItemPickup.cs" />
     <Compile Include="Assets\Scrips\Character\CameraOrbit.cs" />
     <Compile Include="Assets\Scrips\Character\GlobalStringWar.cs" />
     <Compile Include="Assets\Scrips\Character\PlayerInput.cs" />
