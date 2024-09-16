@@ -55,5 +55,7 @@ public class ItemPickup : MonoBehaviour
         _heldItemRb.useGravity = true; // Включаем гравитацию обратно
         _heldItemRb.isKinematic = false; // Отключаем кинематический режим
         _heldItem.isStatic = false;
+        _heldItem = null;
+        _heldItemRb = null;
     }
 }
