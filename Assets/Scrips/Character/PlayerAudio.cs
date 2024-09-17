@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerAudio : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
-    private PlayerInput playerInput;
+    private PlayerInput _playerInput;
 
     private void Start()
     {
-        playerInput = GetComponent<PlayerInput>();
+        _playerInput = GetComponent<PlayerInput>();
         audioSource = GetComponent<AudioSource>();
     }
 
@@ -19,7 +19,7 @@ public class PlayerAudio : MonoBehaviour
     }
     private void AudioON()
     {
-        if (audioSource == playerInput.jumpInput) 
+        if (audioSource == _playerInput.jumpInput) 
         {
             audioSource.Play();
         }
