@@ -157,19 +157,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000081460335
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
-      propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e89ff2dfe4f8b01478abcec09a597ab3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21448a3382bc86048ae97ec37818e2b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalInput: 0
+  horizontalInput: 1
   verticalInput: 0
   jumpInput: 0
   mouseXInput: 0
@@ -549,12 +549,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b23cf81cd3430174d9fee0234f9f8762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerCamera: {fileID: 38671049}
+  _playerCamera: {fileID: 858442147}
   _pickupRange: 3
   _carryDistance: 2
   _pickupLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   _distanceItem: {x: 0, y: 0, z: 0.24}
 --- !u!1 &914519736
 GameObject:
@@ -601,7 +601,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &914519741
 BoxCollider:
@@ -785,11 +785,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d998f3d9dc9712b4ea0ce6ec6c919918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 38671049}
-  player: {fileID: 38671049}
+  target: {fileID: 858442147}
+  player: {fileID: 858442147}
   distance: 5
-  sensitivityX: 100
-  sensitivityY: 100
+  sensitivityX: 200
+  sensitivityY: 200
   minY: -20
   maxY: 80
 --- !u!1 &1781017577
