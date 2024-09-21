@@ -20,8 +20,7 @@ public class PlayerInput : MonoBehaviour
     {
         horizontalInput = Input.GetAxis(GlobalStringWar.horizontal);
         verticalInput = Input.GetAxis(GlobalStringWar.vertical);
-        jumpInput = Input.GetButton(GlobalStringWar.jump);
-
+        jumpInput = Input.GetButtonDown(GlobalStringWar.jump);
     }
 
     private void HandleMouseInput()

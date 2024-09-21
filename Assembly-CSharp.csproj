@@ -61,10 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scrips\Character\PlayerMovement.cs" />
+    <Compile Include="Assets\Scrips\Character\ItemPickup.cs" />
     <Compile Include="Assets\Scrips\Character\CameraOrbit.cs" />
     <Compile Include="Assets\Scrips\Character\GlobalStringWar.cs" />
     <Compile Include="Assets\Scrips\Character\PlayerInput.cs" />
     <Compile Include="Assets\Scrips\Character\PlayerRotation.cs" />
+    <Compile Include="Assets\Scrips\Character\PlayerAudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
